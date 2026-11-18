@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bake &amp; Shake | Bubble tea, shakes and desserts in Barrie, Ontario</title>
+<meta name="description" content="Bubble tea, slushes, smoothies, shakes, croffles and chocolate strawberries at two Barrie locations: Mapleview Drive and Cundles Road East.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Ccircle cx=%2750%27 cy=%2750%27 r=%2750%27 fill=%27%23d62f6d%27/%3E%3Ctext x=%2750%27 y=%2766%27 font-size=%2755%27 text-anchor=%27middle%27 fill=%27white%27 font-family=%27Arial%27 font-weight=%27bold%27%3EB%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Drawn icons used across the page -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-cup" viewBox="0 0 48 48">
+    <rect class="ic-g" x="12" y="9" width="24" height="4" rx="2"/>
+    <rect class="ic-p" x="22.5" y="1" width="4" height="12" rx="2" transform="rotate(12 24.500 7)"/>
+    <path class="ic-w" d="M13 13h22l-2.500 26a3 3 0 0 1-3 2.700h-11a3 3 0 0 1-3-2.700z"/>
+    <path class="ic-p" d="M15.200 25h17.600l-1.400 14a2 2 0 0 1-2 1.800H18.600a2 2 0 0 1-2-1.800z"/>
+    <circle class="ic-g" cx="20" cy="37" r="2"/><circle class="ic-g" cx="25" cy="38" r="2"/><circle class="ic-g" cx="29.500" cy="36.500" r="2"/>
+  </symbol>
+  <symbol id="i-glass" viewBox="0 0 48 48">
+    <path class="ic-w" d="M12 17h24l-3 24a3 3 0 0 1-3 2.700H18a3 3 0 0 1-3-2.700z"/>
+    <path class="ic-p" d="M13.800 25h20.400l-1.600 16a2 2 0 0 1-2 1.800H17.400a2 2 0 0 1-2-1.800z"/>
+    <path class="ic-w" d="M10.500 17c0-5 5-7.500 8.500-5.500 2.500-4.500 8.500-4.500 10.500 0 3.500-2 8.500.5 8.500 5.500z"/>
+    <circle class="ic-r" cx="24" cy="7" r="3"/>
+  </symbol>
+  <symbol id="i-berry" viewBox="0 0 48 48">
+    <path class="ic-r" d="M24 14c-9.500 0-14 8-10.500 17.500C15.500 37.500 21 44 24 44s8.500-6.500 10.500-12.500C38 22 33.500 14 24 14z"/>
+    <path class="ic-c" d="M14.800 22.500c3 2.500 6 .5 9.200 2.500s6.200-.5 9.200-2.500c-.5-2.500-1.500-4.500-3-6-4.500-2-10-2-13.500 0-1.500 1.500-2.400 3.500-1.900 6z"/>
+    <path class="ic-l" d="M24 14l-7-6 7 2.500L31 8z"/>
+    <ellipse class="ic-w" cx="20" cy="30" rx="1.200" ry="1.800"/><ellipse class="ic-w" cx="28" cy="30" rx="1.200" ry="1.800"/>
+    <ellipse class="ic-w" cx="24" cy="36" rx="1.200" ry="1.800"/>
+  </symbol>
+  <symbol id="i-cake" viewBox="0 0 48 48">
+    <rect class="ic-w" x="8" y="26" width="32" height="15" rx="3"/>
+    <path class="ic-p" d="M8 29a3 3 0 0 1 3-3h26a3 3 0 0 1 3 3v3H8z"/>
+    <path class="ic-w" d="M9 26l6-10h18l6 10z"/>
+    <circle class="ic-r" cx="24" cy="12.500" r="3.500"/>
+  </symbol>
+</svg>
+
+<header class="site-header">
+  <div class="wrap row">
+    <a class="brand" href="#top" id="siteName"></a>
+    <nav aria-label="Main">
+      <a href="#menu">Menu</a>
+      <a href="#locations">Locations</a>
+      <a href="#follow">Follow us</a>
+      <a class="nav-btn" href="#order" id="navOrder">Order online</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero confetti">
+    <div class="hero-bg" id="heroBg"></div>
+    <div class="wrap hero-inner">
+      <h1 id="heroTitle"></h1>
+      <p id="heroText"></p>
+      <p class="hero-actions">
+        <a class="btn" href="#locations">Menu and locations</a>
+        <a class="btn light" id="heroOrder" href="#order">Order online</a>
+      </p>
+    </div>
+    <svg class="fl f1" aria-hidden="true"><use href="#i-cup"/></svg>
+    <svg class="fl f2" aria-hidden="true"><use href="#i-berry"/></svg>
+    <svg class="fl f3" aria-hidden="true"><use href="#i-glass"/></svg>
+    <svg class="fl f4" aria-hidden="true"><use href="#i-cake"/></svg>
+    <svg class="wave" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 34C240 74 480 4 720 34s480 36 720-4v30H0z"/></svg>
+  </section>
+
+  <div class="wrap" id="stories"></div>
+
+  <div class="wrap">
+    <section id="loved">
+      <h2 class="section-title">Customer favourites</h2>
+      <div class="loved" id="lovedList"></div>
+    </section>
+  </div>
+
+  <div class="wrap photos" id="photos" hidden></div>
+
+
+  <div class="wrap">
+    <section id="menu">
+      <h2 class="section-title">Menu</h2>
+      <p class="lead">Tap a category to see every flavour.</p>
+      <div class="tiles" id="menuList"></div>
+      <p class="menu-foot" id="menuFoot"></p>
+    </section>
+
+    <section id="locations">
+      <h2 class="section-title">Find a shop</h2>
+      <div class="locs" id="locList"></div>
+      <div class="order" id="order">
+        <p class="order-label">Can't make it in? Order for delivery or pickup:</p>
+        <p id="orderButtons"></p>
+      </div>
+    </section>
+  </div>
+
+  <section class="signup confetti" id="follow">
+    <div class="wrap">
+      <h2>Get new flavours and specials first</h2>
+      <p>Join our list for new menu items and offers from both shops.</p>
+      <form id="signupForm" name="newsletter" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="newsletter">
+        <p class="hp"><label>Leave this empty <input name="bot-field"></label></p>
+        <label class="sr" for="email">Email address</label>
+        <input id="email" name="email" type="email" required placeholder="Your email address" autocomplete="email">
+        <button class="btn light" type="submit">Sign up</button>
+      </form>
+      <p class="form-msg" id="formMsg" role="status"></p>
+    </div>
+  </section>
+</main>
+
+<footer class="confetti">
+  <div class="wrap foot-grid">
+    <div>
+      <p class="foot-brand" id="footBrand"></p>
+      <p>Bubble tea, shakes and desserts in Barrie, Ontario.</p>
+    </div>
+    <div>
+      <p class="foot-head">Explore</p>
+      <p><a href="#menu">Menu</a></p>
+      <p><a href="#locations">Locations</a></p>
+      <p><a href="#order">Order online</a></p>
+    </div>
+    <div>
+      <p class="foot-head">Follow</p>
+      <p id="social"></p>
+    </div>
+  </div>
+  <div class="wrap"><p class="copy" id="copyright"></p></div>
+</footer>
+
+
+<dialog class="sheet" id="menuDialog" aria-labelledby="sheetTitle">
+  <div class="sheet-top">
+    <div class="sheet-tabs" id="sheetTabs"></div>
+    <button class="close" id="sheetClose" type="button" aria-label="Close menu">&times;</button>
+  </div>
+  <div class="sheet-body" id="sheetBody">
+    <div class="cat-head" id="sheetHead">
+      <span id="sheetIcon"></span>
+      <div><h3 id="sheetTitle"></h3><p class="note" id="sheetNote"></p></div>
+    </div>
+    <div class="cards" id="sheetCards"></div>
+    <p class="menu-foot" id="sheetFoot"></p>
+  </div>
+</dialog>
+
+<!-- content.js must load BEFORE script.js -->
+<script src="content.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
