@@ -155,7 +155,7 @@ const SITE = {
         { name: "Ferrero Fantasy", description: "", price: "$11.49" },
         { name: "Strawberry Bliss", description: "Strawberries and milk, whipped cream and fresh strawberry slices.", price: "$10.49" },
         { name: "Mango Tango", description: "", price: "$10.49" },
-        { name: "Strawberry Nutella", description: "", price: "$12.49" },
+        { name: "Strawberry Nutella", description: "", price: "$12.49", image: "images/nutella milkshake.jpg" },
         { name: "Snowy Vanilla", description: "", price: "$9.49" }
       ]
     },
