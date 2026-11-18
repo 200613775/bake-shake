@@ -174,9 +174,12 @@ const SITE = {
       id: "Croffles", icon: "cake", tint: "butter",
       note: "",
       items: [
-        { name: "Classic Croffle", description: "", price: "$7.49" },
-        { popular: true, name: "Biscoff Croffle", description: "Warm croffle with Biscoff.", price: "$10.49" },
-        { name: "Nutella Croffle", description: "", price: "$10.49" }
+        { name: "Chocolate Overload", description: "", price: "$11.99", image: "images/Chocolate Overload.jpg" },
+        { popular: true, name: "Biscoff Lover", description: "Warm croffle with Biscoff.", price: "$11.99", image: "images/biscoff lover.jpg" },
+        { name: "Cookie & Cream", description: "", price: "$11.99", image: "images/cookie & cream.jpg" },
+        { name: "Strawberry Cheesecake Croffle", description: "", price: "$13.99", image: "images/strawberry-cheesecakecroffle.jpg" },
+        { name: "Matcha Berry Bliss", description: "", price: "$13.99", image: "images/matcha berry bliss.jpg" },
+        { name: "Dubai Drizzle", description: "", price: "$13.99", image: "images/Dubai Drizzle.jpg" }
       ]
     },
     {
