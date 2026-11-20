@@ -64,18 +64,24 @@
   }
 
   // Favourites
-  s.menu.forEach(function (cat, catIndex) {
-    cat.items.forEach(function (item) {
-      if (!item.popular) return;
-      var card = el("button", { class: "pick", type: "button", style: "--tint:var(--t-" + (cat.tint || "pink") + ")" });
-      card.addEventListener("click", function () { openSheet(catIndex); });
+s.menu.forEach(function (cat, catIndex) {
+  cat.items.forEach(function (item) {
+    if (!item.popular) return;
+    var card = el("button", { class: "pick", type: "button", style: "--tint:var(--t-" + (cat.tint || "pink") + ")" });
+    card.addEventListener("click", function () { openSheet(catIndex); });
+    if (item.image) {
+      var pic = el("div", { class: "pic" });
+      pic.appendChild(el("img", { src: item.image, alt: item.name, loading: "lazy" }));
+      card.appendChild(pic);
+    } else {
       card.appendChild(icon(cat.icon, "ico"));
-      card.appendChild(el("h3", { text: item.name }));
-      if (item.price) card.appendChild(el("span", { class: "price", text: item.price }));
-      if (item.description) card.appendChild(el("p", { text: item.description }));
-      $("lovedList").appendChild(card);
-    });
+    }
+    card.appendChild(el("h3", { text: item.name }));
+    if (item.price) card.appendChild(el("span", { class: "price", text: item.price }));
+    if (item.description) card.appendChild(el("p", { text: item.description }));
+    $("lovedList").appendChild(card);
   });
+});
   if (!$("lovedList").children.length) $("loved").style.display = "none";
 
   // Menu: category tiles open a sheet with every item

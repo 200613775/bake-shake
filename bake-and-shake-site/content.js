@@ -31,17 +31,20 @@ const SITE = {
     {
       title: "Made to make you happy",
       text: "Bake & Shake is a dessert and bubble tea shop in Barrie. Come in for a milk tea, stay for a croffle, or take chocolate strawberries to go.",
-      icons: ["cup", "berry"], tint: "pink", image: ""
+      image: "images/1_made-to-make-you-happy .webp"
+      // icons: ["cup", "berry"], tint: "pink", image: ""
     },
     {
       title: "A drink for every mood",
       text: "Milk tea, fruit tea, matcha, slushes and smoothies, plus thick milkshakes topped with whipped cream.",
-      icons: ["glass", "cup"], tint: "mint", image: ""
+      image: "images/2_a-drink-for-every-mood .webp"
+      // icons: ["glass", "cup"], tint: "mint", image: ""
     },
     {
       title: "Two shops in Barrie",
       text: "Find us on Mapleview Drive and on Cundles Road East. Check the hours below before you head over.",
-      icons: ["cake", "berry"], tint: "butter", image: ""
+      image: "images/3_two-shops-in-barrie .webp"
+      // icons: ["cake", "berry"], tint: "butter", image: ""
     }
   ],
 
@@ -148,7 +151,7 @@ const SITE = {
       id: "Milkshakes", icon: "glass", tint: "lilac",
       note: "",
       items: [
-        { popular: true, name: "Biscoff Dreamland", description: "Vanilla ice cream blended with Biscoff, swirled with caramel, topped with whipped cream.", price: "$11.49" },
+        { popular: true, name: "Biscoff Dreamland", description: "Vanilla ice cream blended with Biscoff, swirled with caramel, topped with whipped cream.", price: "$11.49", image: "images/biscoff shake1.png" },
         { name: "Oreo Obsession", description: "", price: "$11.49" },
         { name: "Kitkat Madness", description: "", price: "$11.49" },
         { name: "Nutella Heaven", description: "", price: "$11.49" },
@@ -171,25 +174,25 @@ const SITE = {
       ]
     },
     {
-      id: "Croffles", icon: "cake", tint: "butter",
+      id: "Croffles", tint: "butter",
       note: "",
       items: [
         { name: "Chocolate Overload", description: "", price: "$11.99", image: "images/Chocolate Overload.jpg" },
-        { popular: true, name: "Biscoff Lover", description: "Warm croffle with Biscoff.", price: "$11.99", image: "images/biscoff lover.jpg" },
-        { name: "Cookie & Cream", description: "", price: "$11.99", image: "images/cookie & cream.jpg" },
+        { popular: true, name: "Biscoff Lover", description: "Warm croffle with Biscoff.", price: "$11.99", image: "images/biscofflover.png" },
+        { name: "Cookie & Cream", description: "", price: "$11.99", image: "images/cookie&cream.png" },
         { name: "Strawberry Cheesecake Croffle", description: "", price: "$13.99", image: "images/strawberry-cheesecakecroffle.jpg" },
-        { name: "Matcha Berry Bliss", description: "", price: "$13.99", image: "images/matcha berry bliss.jpg" },
+        { name: "Matcha Berry Bliss", description: "", price: "$13.99", image: "images/straw-matcha.png" },
         { name: "Dubai Drizzle", description: "", price: "$13.99", image: "images/Dubai Drizzle.jpg" }
       ]
     },
     {
-      id: "Milk cakes", icon: "cake", tint: "lilac",
+      id: "Milk cakes", tint: "lilac",
       note: "",
       items: [
-        { name: "Classic Milk Cake", description: "", price: "" },
-        { name: "Strawberry Milk Cake", description: "", price: "" },
-        { name: "Biscoff Milk Cake", description: "", price: "" },
-        { name: "Kunafa Milk Cake", description: "", price: "" }
+        { name: "Classic Milk Cake", description: "", price: "", image: "images/classicM.png" },
+        { name: "Strawberry Milk Cake", description: "", price: "", image: "images/strawberryM.png" },
+        { name: "Biscoff Milk Cake", description: "", price: "", image: "images/BiscoffM.png" },
+        { name: "Kunafa Milk Cake", description: "", price: "", image: "images/kunafaM.png" }
       ]
     },
     {

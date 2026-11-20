@@ -175,3 +175,31 @@ footer a:hover{text-decoration:underline;text-underline-offset:4px}
   .foot-grid{grid-template-columns:1fr}
 }
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.tile{transition:none}.tile:hover{transform:none}}
+
+/* Story images: fixed 4:3 frame, no stretching */
+.story-art{
+  aspect-ratio: 4 / 3;
+  width: 100%;
+  max-width: 560px;      /* biggest the picture will get on desktop */
+  margin: 0 auto;        /* centers it in its column */
+  border-radius: 28px;
+  overflow: hidden;
+}
+.story-art img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;     /* fills the frame, crops edges if needed */
+  object-position: center;
+  display: block;
+}
+
+/* Phones: full width, a little shorter */
+@media (max-width: 760px){
+  .story-art{
+    max-width: 100%;
+    aspect-ratio: 4 / 3;
+  }
+}
+
+.pick .pic{aspect-ratio:4/3;border-radius:12px;overflow:hidden;margin-bottom:12px}
+.pick .pic img{width:100%;height:100%;object-fit:cover;display:block}
