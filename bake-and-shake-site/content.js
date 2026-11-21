@@ -17,7 +17,7 @@
 const SITE = {
   name: "Bake & Shake",
   heroTitle: "Bubble tea, shakes and desserts in Barrie",
-  heroImage: "",   // optional: "images/hero.jpg" becomes the hero background photo
+  heroImage: "images/frontpage.jpg",   // optional: "images/hero.jpg" becomes the hero background photo
   intro: "Two shops, one menu: slushes, smoothies, milk tea, croffles, milk cakes and chocolate strawberries. Come in, take it to go, or order delivery.",
   email: "bakeandshake222@gmail.com",
 
@@ -148,7 +148,7 @@ const SITE = {
       ]
     },
     {
-      id: "Milkshakes", icon: "glass", tint: "lilac",
+      id: "Milkshakes", image: "images/images/biscoff shake1.png", tint: "lilac",
       note: "",
       items: [
         { popular: true, name: "Biscoff Dreamland", description: "Vanilla ice cream blended with Biscoff, swirled with caramel, topped with whipped cream.", price: "$11.49", image: "images/biscoff shake1.png" },
@@ -163,7 +163,7 @@ const SITE = {
       ]
     },
     {
-      id: "Chocolate strawberries", icon: "berry", tint: "pink",
+      id: "Chocolate strawberries", image: "images/chocolate.jpg", tint: "pink",
       note: "",
       items: [
         { name: "Chocolate Strawberries", description: "", price: "$11.99", image: "images/chocolate.jpg" },
@@ -174,7 +174,7 @@ const SITE = {
       ]
     },
     {
-      id: "Croffles", tint: "butter",
+      id: "Croffles", image: "images/biscofflover.png", tint: "butter",
       note: "",
       items: [
         { name: "Chocolate Overload", description: "", price: "$11.99", image: "images/Chocolate Overload.jpg" },
@@ -186,7 +186,7 @@ const SITE = {
       ]
     },
     {
-      id: "Milk cakes", tint: "lilac",
+      id: "Milk cakes", image: "images/classicM.png", tint: "lilac",
       note: "",
       items: [
         { name: "Classic Milk Cake", description: "", price: "", image: "images/classicM.png" },
