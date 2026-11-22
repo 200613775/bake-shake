@@ -169,7 +169,7 @@ const SITE = {
       ]
     },
     {
-      id: "Milkshakes", image: "images/images/biscoff shake1.png", tint: "lilac",
+      id: "Milkshakes", image: "images/biscoff shake1.png", tint: "lilac",
       note: "",
       items: [
         { popular: true, name: "Biscoff Dreamland", description: "Vanilla ice cream blended with Biscoff, topped with whipped cream.", price: "$10.99", image: "images/biscoff shake1.png" },
