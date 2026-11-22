@@ -81,9 +81,16 @@ const SITE = {
       id: "Milk tea", icon: "cup", tint: "pink",
       note: "Regular (16 oz) or large (24 oz).",
       items: [
-        { name: "Original Milk Tea", description: "Classic milk tea with chewy tapioca pearls.", price: "$6.99" },
-        { name: "Mango Milk Tea", description: "", price: "$6.99" },
-        { name: "Watermelon Milk Tea", description: "Watermelon-infused tea blended with milk.", price: "$6.99" }
+        { name: "Original Milk Tea", description: "Classic milk tea with chewy tapioca pearls.", price: "$5.49" },
+        { name: "Mango Milk Tea", description: "", price: "$5.49" },
+        { name: "Jasmine Milk Tea", description: "Jasmine-infused tea blended with milk.", price: "$5.49" },
+        { name: "Thai Milk Tea", description: "", price: "$5.49" },
+        { name: "Matcha Milk Tea", description: "", price: "$5.49" },
+        { name: "Strawberry Milk Tea", description: "", price: "$5.49" },
+        { name: "Taro Milk Tea", description: "", price: "$5.49" },
+        { name: "Pineapple Milk Tea", description: "", price: "$5.49" },
+        { name: "Honeydew Milk Tea", description: "", price: "$5.49" },
+        { name: "Coconut Milk Tea", description: "", price: "$5.49" }
         /* Add more milk teas here, for example:
         , { name: "Taro Milk Tea", description: "", price: "$6.99" } */
       ]
@@ -93,84 +100,99 @@ const SITE = {
       note: "Each comes with one scoop of tapioca. Shake well before drinking.",
       items: [
         { name: "Brown Sugar Original Milk Tea", description: "Black milk tea with brown sugar.", price: "$6.99" },
-        { popular: true, name: "Brown Sugar Boba Milk", description: "Milk with brown sugar and a scoop of tapioca.", price: "$7.49" },
-        { name: "Dirty Taro", description: "Taro milk tea with brown sugar.", price: "$7.49" },
-        { name: "Dirty Matcha", description: "Matcha milk tea with brown sugar.", price: "$6.99" }
+        { popular: true, name: "Brown Sugar Boba Milk", description: "Milk with brown sugar and a scoop of tapioca.", price: "$6.99" },
+        { name: "Dirty Taro", description: "Taro milk tea with brown sugar.", price: "$6.99" },
+        { name: "Dirty Matcha", description: "Matcha milk tea with brown sugar.", price: "$6.99" },
+        { name: "Dirty Coconut", description: "Coconut milk tea with brown sugar.", price: "$6.99" }
       ]
     },
     {
       id: "Fruit tea", icon: "cup", tint: "mint",
       note: "Freshly brewed tea infused with fruit. Regular (16 oz) or large (24 oz).",
       items: [
-        { name: "Strawberry Tea", description: "", price: "$6.75" },
-        { name: "Peach Tea", description: "", price: "$6.75" },
-        { name: "Green Apple Tea", description: "", price: "$6.75" },
-        { name: "Mango Tea", description: "", price: "$6.75" },
-        { name: "Mixed Flavour Fruit Tea", description: "A blend of fruit flavours.", price: "$7.25" }
+        { name: "Strawberry Tea", description: "", price: "$5.25" },
+        { name: "Peach Tea", description: "", price: "$5.25" },
+        { name: "Green Apple Tea", description: "", price: "$5.25" },
+        { name: "Mango Tea", description: "", price: "$5.25" },
+        { name: "Lychee Tea", description: "", price: "$5.25" },
+        { name: "Passion Fruit Tea", description: "", price: "$5.25" },
+        { name: "Pineapple Tea", description: "", price: "$5.25" },
+        { name: "Watermelon Tea", description: "", price: "$5.25" },
+        { name: "Kiwi Tea", description: "", price: "$5.25" },
+        { name: "Blueberry Tea", description: "", price: "$5.25" }
       ]
     },
     {
       id: "Matcha", icon: "cup", tint: "lilac",
       note: "",
       items: [
-        { name: "Mango Matcha Latte", description: "", price: "$7.49" },
-        { name: "Strawberry Matcha Latte", description: "Matcha with milk and strawberry puree.", price: "$7.49" },
-        { name: "Dirty Matcha", description: "Matcha milk tea with brown sugar and tapioca.", price: "$6.99" }
+        { name: "Regular Matcha Latte", description: "", price: "$6.99" },
+        { name: "Mango Matcha Latte", description: "", price: "$6.99" },
+        { name: "Strawberry Matcha Latte", description: "", price: "$6.99" },
+        { name: "Pistachio Matcha Latte", description: "", price: "$6.99" },
+        { name: "Coconut Matcha Latte", description: "", price: "$6.99" }
       ]
     },
     {
       id: "Slushes", icon: "glass", tint: "mint",
       note: "Regular (16 oz) or large (24 oz).",
       items: [
-        { name: "Mango Slush", description: "", price: "$6.75" },
-        { name: "Strawberry Slush", description: "", price: "$6.75" },
-        { name: "Pineapple Slush", description: "", price: "$6.75" },
-        { name: "Watermelon Slush", description: "", price: "$6.75" },
-        { name: "Kiwi Slush", description: "", price: "$6.75" },
-        { name: "Peach Slush", description: "", price: "$6.75" },
-        { name: "Green Apple Slush", description: "", price: "$6.75" },
-        { name: "Passion Fruit Slush", description: "", price: "$6.75" },
-        { name: "Lychee Slush", description: "", price: "$6.75" },
-        { name: "Mix Flavour Slush", description: "Pick your own blend.", price: "$7.25" }
+        { name: "Mango Slush", description: "", price: "$5.25" },
+        { name: "Strawberry Slush", description: "", price: "$5.25" },
+        { name: "Pineapple Slush", description: "", price: "$5.25" },
+        { name: "Watermelon Slush", description: "", price: "$5.25" },
+        { name: "Kiwi Slush", description: "", price: "$5.25" },
+        { name: "Peach Slush", description: "", price: "$5.25" },
+        { name: "Green Apple Slush", description: "", price: "$5.25" },
+        { name: "Passion Fruit Slush", description: "", price: "$5.25" },
+        { name: "Lychee Slush", description: "", price: "$5.25" },
+        { name: "Blueberry Slush", description: "", price: "$5.25" }
       ]
     },
     {
       id: "Smoothies", icon: "glass", tint: "pink",
       note: "Regular (16 oz) or large (24 oz).",
       items: [
-        { name: "Mango Smoothie", description: "", price: "$6.99" },
-        { name: "Pineapple Smoothie", description: "", price: "$6.99" },
-        { name: "Watermelon Smoothie", description: "", price: "$6.99" },
-        { name: "Honeydew Smoothie", description: "", price: "$6.99" },
-        { name: "Taro Smoothie", description: "", price: "$6.99" },
-        { name: "Coconut Smoothie", description: "Blended with real coconut meat.", price: "$6.99" },
-        { name: "Mix Flavour Smoothie", description: "Pick your own blend.", price: "$7.49" }
+        { name: "Mango Smoothie", description: "", price: "$5.49" },
+        { name: "Pineapple Smoothie", description: "", price: "$5.49" },
+        // { name: "Watermelon Smoothie", description: "", price: "$5.49" },
+        { name: "Honeydew Smoothie", description: "", price: "$5.49" },
+        { name: "Taro Smoothie", description: "", price: "$5.49" },
+        { name: "Coconut Smoothie", description: "", price: "$5.49" },
+        { name: "Strawberry Smoothie", description: "", price: "$5.49" },
+        { name: "Matcha Smoothie", description: "", price: "$5.49" },
+        { name: "Banana Smoothie", description: "", price: "$5.49" },
+        { name: "Pina Colada Smoothie", description: "", price: "$5.99" },
+        { name: "Mango Pineapple Smoothie", description: "", price: "$5.99" },
+        { name: "Strawberry Banana Smoothie", description: "", price: "$5.99" }
+
       ]
     },
     {
       id: "Milkshakes", image: "images/images/biscoff shake1.png", tint: "lilac",
       note: "",
       items: [
-        { popular: true, name: "Biscoff Dreamland", description: "Vanilla ice cream blended with Biscoff, swirled with caramel, topped with whipped cream.", price: "$11.49", image: "images/biscoff shake1.png" },
-        { name: "Oreo Obsession", description: "", price: "$11.49" },
-        { name: "Kitkat Madness", description: "", price: "$11.49" },
-        { name: "Nutella Heaven", description: "", price: "$11.49" },
-        { name: "Ferrero Fantasy", description: "", price: "$11.49" },
-        { name: "Strawberry Bliss", description: "Strawberries and milk, whipped cream and fresh strawberry slices.", price: "$10.49" },
-        { name: "Mango Tango", description: "", price: "$10.49" },
-        { name: "Strawberry Nutella", description: "", price: "$12.49", image: "images/nutella milkshake.jpg" },
-        { name: "Snowy Vanilla", description: "", price: "$9.49" }
+        { popular: true, name: "Biscoff Dreamland", description: "Vanilla ice cream blended with Biscoff, topped with whipped cream.", price: "$10.99", image: "images/biscoff shake1.png" },
+         { name: "Snowy Vanilla", description: "", price: "$7.99" },
+         { name: "Strawberry Bliss", description: "", price: "$8.99" },
+          { name: "Mango Tango", description: "", price: "$8.99" },
+        { name: "Fig & Cashew", description: "", price: "$9.99" },
+        { name: "Oreo Obsession", description: "", price: "$9.99" },
+        { name: "Nutella Heaven", description: "", price: "$9.99", image: "images/nutella milkshake.jpg" },
+        { name: "Kitkat Madness", description: "", price: "$10.99" },
+        { name: "Ferrero Fantasy", description: "", price: "$10.99" }
+  
       ]
     },
     {
       id: "Chocolate strawberries", image: "images/chocolate.jpg", tint: "pink",
       note: "",
       items: [
-        { name: "Chocolate Strawberries", description: "", price: "$11.99", image: "images/chocolate.jpg" },
-        { popular: true, name: "Dubai's Kunafa Strawberries", description: "Strawberries dipped in chocolate with kunafa crunch", price: "$14.99", image: "images/kunafa.jpg" },
-        { name: "Oreo Strawberries", description: "", price: "$14.99", image: "images/oreo.jpg" },
-        { name: "Lotus Strawberries", description: "", price: "$14.99", image: "images/lotus.jpg" },
-        { name: "Hazelnut Dark Chocolate Strawberry", description: "", price: "$14.99", image: "images/hazelnut.jpg" }
+        { name: "Chocolate Strawberries", description: "", price: "$8.99", image: "images/chocolate.jpg" },
+        { popular: true, name: "Dubai's Kunafa Strawberries", description: "Strawberries dipped in chocolate with kunafa crunch", price: "$12.99", image: "images/kunafa.jpg" },
+        { name: "Oreo Strawberries", description: "", price: "$12.99", image: "images/oreo.jpg" },
+        { name: "Lotus Strawberries", description: "", price: "$12.99", image: "images/lotus.jpg" },
+        { name: "Hazelnut Dark Chocolate Strawberry", description: "", price: "$12.99", image: "images/hazelnut.jpg" }
       ]
     },
     {
@@ -189,29 +211,46 @@ const SITE = {
       id: "Milk cakes", image: "images/classicM.png", tint: "lilac",
       note: "",
       items: [
-        { name: "Classic Milk Cake", description: "", price: "", image: "images/classicM.png" },
-        { name: "Strawberry Milk Cake", description: "", price: "", image: "images/strawberryM.png" },
-        { name: "Biscoff Milk Cake", description: "", price: "", image: "images/BiscoffM.png" },
-        { name: "Kunafa Milk Cake", description: "", price: "", image: "images/kunafaM.png" }
+        { name: "Classic Milk Cake", description: "", price: "$13.99", image: "images/classicM.png" },
+        { name: "Strawberry Milk Cake", description: "", price: "$15.99", image: "images/strawberryM.png" },
+        { name: "Biscoff Milk Cake", description: "", price: "$15.99", image: "images/BiscoffM.png" },
+        { name: "Kunafa Milk Cake", description: "", price: "$15.99", image: "images/kunafaM.png" },
+        {name: "Molton Choco Lava Cake", description: "A gooey lava cake served sizzling with vanilla ice cream and a rich milk chocolate pour.", price: "$16.99", image: "" }
       ]
     },
     {
-      id: "Ice cream and waffles", icon: "cake", tint: "mint",
+      id: "Waffles", icon: "cake", tint: "mint",
       note: "",
       items: [
-        { name: "Kunafa Ice Cream", description: "", price: "" },
-        { name: "Bubble Waffle", description: "", price: "" }
+        { name: "Birthday Cake", description: "", price: "$17.99" },
+        { name: "Cookie Eclips", description: "", price: "$18.99" },
+        {name: "Dubai Bling", description: "", price: "$18.99" },
+        { name: "Brownie Bomb", description: "", price: "$19.99" },
+        { name: "Banana Berry Blast", description: "", price: "$19.99" },
+        { name: "Get It All", description: "", price: "$22.99" }
       ]
-    }
+    },
     /* To add Cookie Cups (or anything else), copy this block and edit it:
     , {
-      id: "Cookie cups",
+      id: "Cookie cups and ice cream", icon: "cake", tint: "butter",
       note: "",
       items: [
-        { name: "Name of cookie cup", description: "", price: "$0.00" }
+        { name: "Classic", description: "", price: "$0.00" },
+         { name: "Dubai", description: "", price: "$0.00" }
       ]
     } */
+
+      {
+      id: "Cheese Cakes", icon: "cake", tint: "mint",
+      note: "",
+      items: [
+        { name: "Strawberry", description: "", price: "$10.99" },
+        { name: "Oreo", description: "", price: "$10.99" },
+        {name: "Biscoff", description: "", price: "$10.99" },
+        { name: "Kunafa", description: "", price: "$10.99" }
+      ]
+    }
   ],
 
-  menuFootnote: "Prices are taken from our delivery menus and can differ in store. Ask at the counter about today's specials."
+  // menuFootnote: "Prices are taken from our delivery menus and can differ in store. Ask at the counter about today's specials."
 };
