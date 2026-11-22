@@ -1097,3 +1097,31 @@ footer a:hover {
     transform: none;
   }
 }
+
+
+/* Empty menu categories */
+.empty-menu {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 45px 20px;
+  color: var(--muted);
+}
+
+.empty-menu svg {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 15px;
+  opacity: 0.65;
+}
+
+.empty-menu h3 {
+  color: var(--ink);
+  margin-bottom: 8px;
+}
+
+.empty-menu p {
+  max-width: 350px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
